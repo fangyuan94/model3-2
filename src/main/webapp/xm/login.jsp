@@ -6,6 +6,12 @@
     <script>
         $(function () {
 
+            if($.trim("${sessionScope.userInfo}") != "")
+            {
+                top.location.href="list.jsp";
+
+            }
+
             $("#tj").bind("click",function () {
 
                 var userName = $("#userName").val();
